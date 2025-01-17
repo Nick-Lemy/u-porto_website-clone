@@ -599,6 +599,14 @@ video {
   margin-left: 10rem;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
 .flex {
   display: flex;
 }
@@ -642,6 +650,22 @@ video {
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-\[1000px\] {
+  width: 1000px;
+}
+
+.w-52 {
+  width: 13rem;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .flex-col {
