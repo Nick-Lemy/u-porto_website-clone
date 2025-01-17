@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>U.PORTO</title>
-    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="[&>*]:scroll-smooth">
     <header class="flex flex-col">
         <div class="flex bg-[#333333] justify-around items-center">
             <div class="flex gap-9 py-2 [&>*]:text-white">
@@ -54,7 +54,7 @@
             </div>
         </nav>
         <div
-            class="flex relative bg-cover max-h-[630px] hero bg-[url('https://www.up.pt/portal/media/images/slide-estudantes-internacionais-2025-2026.format-jpeg.jpg')]">
+            class="flex relative bg-cover hero bg-[url('https://www.up.pt/portal/media/images/slide-estudantes-internacionais-2025-2026.format-jpeg.jpg')]">
             <img class="absolute z-0" src="" alt="">
             <div class="relative mt-60 ml-52 mb-16 items-start flex flex-col gap-3 w-fit px-5 bg-[#33363D] py-7">
                 <h2 class="font-extrabold text-2xl text-white">
@@ -75,14 +75,14 @@
                 <h1 class="text-6xl text-[#A18A4D] mb-4">
                     Study
                 </h1>
-                <div class="grid grid-cols-4 w-full justify-stretch pb-14 border-b-2">
+                <div class="grid grid-cols-4 w-full pb-14 border-b-2">
                     <div class="flex flex-col text-left row-span-1">
                         <p class="text-3xl font-bold">
                             Your future is here!
                         </p>
                     </div>
-                    <div class="col-start-3 col-end-5 max-wborder-2">
-                        <p class="font-extralight text-xl text-gray-500">
+                    <div class="col-start-2 col-end-5 ">
+                        <p class="font-light text-xl text-gray-500">
                             Gathering the most complete offer of training programmes in Portugal, the 14 faculties of
                             the
                             U.Porto offer unique conditions to those who want to build an academic path of excellence
@@ -92,7 +92,29 @@
                     </div>
                 </div>
                 <div>
-
+                    <div class="flex flex-col text-left row-span-1">
+                        <p class="text-3xl font-bold mt-16">
+                            Which course are you looking for?
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-3 h-screen">
+                        <div class="col-start-1 col-end-3 [&>*]:">
+                            <div class="border-2 border-black my-4 p-4 text-xl text-black">
+                                <p>All</p>
+                            </div>
+                            <div class=" border-2 border-black my-4 p-4 text-xl text-gray-500">
+                                <p>Please enter course keywords... </p>
+                            </div>
+                            <button class="bg-[#A18A4D] py-3 w-full text-white font-bold text-2xl">
+                                Search
+                            </button>
+                        </div>
+                        <div class="col-start-3">
+                            <h2 class="text-2xl font-bold">
+                                Courses from A to Z:
+                            </h2>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
