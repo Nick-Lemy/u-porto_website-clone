@@ -566,77 +566,56 @@ video {
   z-index: 0;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
+.col-start-3 {
+  grid-column-start: 3;
 }
 
-.mt-96 {
-  margin-top: 24rem;
+.col-end-5 {
+  grid-column-end: 5;
 }
 
-.mt-80 {
-  margin-top: 20rem;
+.row-span-1 {
+  grid-row: span 1 / span 1;
 }
 
-.mt-72 {
-  margin-top: 18rem;
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.ml-52 {
+  margin-left: 13rem;
 }
 
 .mt-60 {
   margin-top: 15rem;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
-.ml-20 {
-  margin-left: 5rem;
-}
-
-.ml-40 {
-  margin-left: 10rem;
-}
-
-.mb-14 {
-  margin-bottom: 3.5rem;
-}
-
-.mb-40 {
-  margin-bottom: 10rem;
+.mb-32 {
+  margin-bottom: 8rem;
 }
 
 .flex {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-6 {
   height: 1.5rem;
 }
 
-.min-h-\[650px\] {
-  min-height: 650px;
+.h-screen {
+  height: 100vh;
 }
 
-.min-h-\[600px\] {
-  min-height: 600px;
-}
-
-.min-h-\[620px\] {
-  min-height: 620px;
-}
-
-.min-h-\[610px\] {
-  min-height: 610px;
-}
-
-.min-h-\[6-8px\] {
-  min-height: 6-8px;
-}
-
-.min-h-\[608px\] {
-  min-height: 608px;
+.max-h-\[630px\] {
+  max-height: 630px;
 }
 
 .w-28 {
@@ -652,20 +631,12 @@ video {
   width: fit-content;
 }
 
-.w-\[1000px\] {
-  width: 1000px;
+.w-full {
+  width: 100%;
 }
 
-.w-52 {
-  width: 13rem;
-}
-
-.w-56 {
-  width: 14rem;
-}
-
-.w-40 {
-  width: 10rem;
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -690,6 +661,10 @@ video {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-stretch {
+  justify-content: stretch;
 }
 
 .gap-20 {
@@ -721,11 +696,6 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
-.border-red-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(248 113 113 / var(--tw-border-opacity, 1));
-}
-
 .bg-\[\#333333\] {
   --tw-bg-opacity: 1;
   background-color: rgb(51 51 51 / var(--tw-bg-opacity, 1));
@@ -746,6 +716,14 @@ video {
   background-color: rgb(213 213 213 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[url\(\'https\:\/\/www\.up\.pt\/portal\/media\/images\/slide-estudantes-internacionais-2025-2026\.format-jpeg\.jpg\'\)\] {
+  background-image: url('https://www.up.pt/portal/media/images/slide-estudantes-internacionais-2025-2026.format-jpeg.jpg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -759,6 +737,11 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-80 {
+  padding-left: 20rem;
+  padding-right: 20rem;
 }
 
 .py-2 {
@@ -776,8 +759,40 @@ video {
   padding-bottom: 2.25rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .font-sans {
@@ -787,6 +802,21 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -801,9 +831,18 @@ video {
   font-weight: 300;
 }
 
+.font-extralight {
+  font-weight: 200;
+}
+
 .text-\[\#33363D\] {
   --tw-text-opacity: 1;
   color: rgb(51 54 61 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#A18A4D\] {
+  --tw-text-opacity: 1;
+  color: rgb(161 138 77 / var(--tw-text-opacity, 1));
 }
 
 .text-white {
@@ -811,8 +850,14 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.\[\&\>\*\]\:font-bold>* {
-  font-weight: 700;
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
 }
 
 .\[\&\>\*\]\:font-extrabold>* {
