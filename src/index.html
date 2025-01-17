@@ -91,13 +91,13 @@
                         </p>
                     </div>
                 </div>
-                <div>
+                <div class="">
                     <div class="flex flex-col text-left row-span-1">
                         <p class="text-3xl font-bold mt-16">
                             Which course are you looking for?
                         </p>
                     </div>
-                    <div class="grid grid-cols-3 h-screen">
+                    <div class="grid grid-cols-3 h-fit gap-9">
                         <div class="col-start-1 col-end-3 [&>*]:">
                             <div class="border-2 border-black my-4 p-4 text-xl text-black">
                                 <p>All</p>
@@ -109,10 +109,15 @@
                                 Search
                             </button>
                         </div>
-                        <div class="col-start-3">
+                        <div class="col-start-3 flex flex-col h-full justify-evenly">
                             <h2 class="text-2xl font-bold">
                                 Courses from A to Z:
                             </h2>
+                            <ul class="flex flex-col [&>*]:text-2xl [&>*]:font-light underline gap-2">
+                                <li class=""><a href="">Bachelor's and Integrated Master’s Degrees</a></li>
+                                <li><a href="">Master’s Degrees</a></li>
+                                <li><a href="">Doctorates</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
